@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'BodoniXT';
+  src:
+    url('../shared/fonts/BodoniXT.woff2') format('woff2'),
+    url('../shared/fonts/BodoniXT.woff') format('woff'),
+    url('../shared/fonts/BodoniXT.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-family: 'BodoniXT';
+  font-size: 4em;
+  text-align: center;
+  margin-top: 20%;
+}
+h3 {
+  font-family: 'BodoniXT';
+  font-size: 3em;
+  text-align: center;
+}
+
+:host {
+  display: block;
+}
+
+.enter-animation {
+  animation: slide-fade 1s;
+}
+
+@keyframes slide-fade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact {
+  display: flex;
+}
+
+a {
+  border: 1px solid;
+  color: white;
+  background-color: gray;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px auto;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: black;
+  color: darkred;
+}

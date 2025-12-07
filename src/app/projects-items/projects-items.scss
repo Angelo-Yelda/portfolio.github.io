@@ -1,0 +1,30 @@
+.item {
+  padding: 20px;
+  font-size: 1.3rem;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.gif {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+img:hover .gif {
+  opacity: 1;
+}
+
+a {
+  color: white;
+}

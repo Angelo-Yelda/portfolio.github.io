@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'BodoniXT';
+  src:
+    url('shared/fonts/BodoniXT.woff2') format('woff2'),
+    url('shared/fonts/BodoniXT.woff') format('woff'),
+    url('shared/fonts/BodoniXT.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.side {
+  width: 80px;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side button {
+  width: 100%;
+  padding: 10px 10px;
+  background: none;
+  border: none;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.side button:hover {
+  color: darkred;
+}
+
+.side button.active {
+  color: darkred;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  color: white;
+}

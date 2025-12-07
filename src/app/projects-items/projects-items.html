@@ -1,0 +1,11 @@
+<div class="item" (mouseenter)="isHover = true" (mouseleave)="isHover = false">
+  <div class="imageContainer">
+    <img [src]="isHover && gif ? gif : image" [alt]="title" width="500px" loading="lazy" />
+  </div>
+
+  <h3 *ngIf="!url">{{ title }}</h3>
+  <a *ngIf="url" [href]="url">
+    <h3>{{ title }}</h3>
+  </a>
+  <p>{{ description }}</p>
+</div>

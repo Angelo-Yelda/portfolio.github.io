@@ -1,0 +1,31 @@
+@if (isShown()) {
+  <div class="wrapper">
+    <h1>Projects</h1>
+    <mat-divider></mat-divider>
+    <h2>Games</h2>
+    <div class="container">
+      <app-projects-items
+        *ngFor="let item of projectGames"
+        [title]="item.title"
+        [description]="item.description"
+        [image]="item.image"
+        [gif]="item.gif"
+        [url]="item.url"
+        loading="lazy"
+      ></app-projects-items>
+    </div>
+    <mat-divider></mat-divider>
+    <h2>Coding</h2>
+    <div class="container">
+      <app-projects-items
+        *ngFor="let item of projectCode"
+        [title]="item.title"
+        [description]="item.description"
+        [image]="item.image"
+        [gif]="item.gif"
+        [url]="item.url"
+        loading="lazy"
+      ></app-projects-items>
+    </div>
+  </div>
+}

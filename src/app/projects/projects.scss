@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'BodoniXT';
+  src:
+    url('../shared/fonts/BodoniXT.woff2') format('woff2'),
+    url('../shared/fonts/BodoniXT.woff') format('woff'),
+    url('../shared/fonts/BodoniXT.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OldStyle';
+  src:
+    url('../shared/fonts/OldStyle1HPLHS.woff2') format('woff2'),
+    url('../shared/fonts/OldStyle1HPLHS.woff') format('woff'),
+    url('../shared/fonts/OldStyle1HPLHS.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 30px 0;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.wrapper {
+  font-family: 'OldStyle';
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+:host {
+  display: block;
+  animation: slide-fade 1s;
+}
+
+@keyframes slide-fade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

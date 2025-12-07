@@ -1,0 +1,23 @@
+<div class="layout">
+  <div class="side">
+    <button routerLink="/home" routerLinkActive="active">
+      <span class="icon material-icons">home</span>
+    </button>
+
+    <button routerLink="/projects" routerLinkActive="active">
+      <span class="icon material-icons">folder</span>
+    </button>
+
+    <button routerLink="/about" routerLinkActive="active">
+      <span class="icon material-icons">info</span>
+    </button>
+
+    <button routerLink="/resume" routerLinkActive="active">
+      <span class="icon material-icons">assignment</span>
+    </button>
+  </div>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
